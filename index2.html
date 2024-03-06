@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      li:first-child {
+        color: red;
+
+      }
+
+      li:last-child {
+        color: rgb(33, 154, 29);
+
+      }
+
+      li:nth-child(2) {
+        /*can use even odd as well*/
+        color: rgb(81, 40, 176);
+
+      }
+
+      .bx p:hover {
+        background-color: black;
+        color: red;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: black;
+        color: red;
+      }
+
+      .novel p:hover:before {
+        content: 'HighLight ';
+        color: red;
+        font-size: 20px;
+      }
+
+      .novel p::after {
+        content: 'HighLight ';
+        color: red;
+        font-size: 20px;
+      }
+
+      .novel p::selection {
+        background-color: red;
+      }
+
+      /*-- .novel p {
+        user-select: none;
+      }--*/
+
+      img[alt='den'] {
+        height: 100px;
+      }
+
+      img[alt='snow'] {
+        height: 200px;
+      }
+
+      input:focus {
+        color: red;
+      }
+
+      input[type="email"]:focus {
+        color: green;
+        border: 1px solid red;
+      }
+
+
+      input[type='radio']:checked+label {
+        color: red;
+      }
+
+      input[type='radio'] {
+        /*for male female */
+        /* width: 10px;
+        height: 10px; */
+        border-radius: 50%;
+        outline: none;
+
+        box-shadow: 0 0 0 2px gray;
+      }
+
+      .bx p {
+        text-align: start;
+        text-transform: capitalize;
+        text-decoration: underline 1px red;
+        font-style: italic;
+        font-weight: 700;
+
+      }
+
+      h3 {
+        text-shadow: 4px 4px 2px red;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h3>hello world </h3>
+    <div class="novel">
+      <p>
+        Lorem ipsu consectetur adipisicing elit. Itaque, aut!
+      </p>
+    </div>
+
+    <div class="af-bf">
+      <strong>sd;flks;ldf</strong>
+      <strong>sd;flks;ldf</strong>
+
+    </div>
+    <strong>sald;kms;alk</strong>
+
+    <div class="bx">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, debitis?</p>
+    </div>
+
+
+    <button>Hover Me</button>
+
+    <ol>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde.
+      </li>
+
+    </ol>
+
+    <img src="https://froala.com/wp-content/uploads/2019/11/post41.svg" alt="den">
+    <img src="https://froala.com/wp-content/uploads/2019/11/post41.svg" alt="snow">
+
+
+    <form action="#">
+      <input type="email" placeholder="email add">
+      <br>
+      <br>
+      <input type="text" placeholder="yourname">
+      <br>
+      <br>
+      <p>
+
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">female</label>
+
+      </p>
+    </form>
+
+
+  </body>
+
+</html>
